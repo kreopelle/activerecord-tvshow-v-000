@@ -6,7 +6,7 @@ class Show < ActiveRecord::Base
   end
 
   def self.most_popular_show
-    Show.
+    Show.where(:rating = Show.highest_rating)
     SELECT * FROM shows ORDER BY show.rating DESC LIMIT 1
 
   end
