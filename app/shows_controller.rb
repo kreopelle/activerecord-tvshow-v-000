@@ -1,4 +1,3 @@
-
   def highest_rating
     Show.maximum(:rating)
     binding.pry
